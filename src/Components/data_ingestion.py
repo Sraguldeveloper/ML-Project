@@ -7,7 +7,7 @@ from src.logger import lg
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-
+from src.Components.model_trainer import ModelTrainer
 from src.Components.data_transformation import DataTranformationConfig
 from src.Components.data_transformation import DataTransformation
 
@@ -50,4 +50,7 @@ if __name__=="__main__":
     train_data,test_data = object.initiate_data_ingestion()
     
     data_transformation = DataTransformation()
-    data_transformation.init_ate_data_transform(train_data,test_data)
+    train_arr,test_arr,_ = data_transformation.init_ate_data_transform(train_data,test_data)
+    
+    modelTrainer = ModelTrainer()
+    print(modelTrainer.initiate_model_training(train_arr,test_arr))

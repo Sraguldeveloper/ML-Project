@@ -14,7 +14,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTranformationConfig:
-    preProcessorObjFile_path = os.path.join('arifacts','proprocessor.pkl')
+    preProcessorObjFile_path = os.path.join('arifacts','preprocessor.pkl')
     
 class DataTransformation:
     def __init__(self):

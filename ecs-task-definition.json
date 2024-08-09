@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "machine_learning",
-            "image": "851725381959.dkr.ecr.us-east-1.amazonaws.com/studentperformance",
+            "image": "b14ac8a2f4b4baeb9354034d22196dd414b64130",
             "cpu": 0,
             "portMappings": [
                 {
